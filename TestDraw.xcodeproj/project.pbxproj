@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C86ED1A013CD4AC000A63045 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86ED19F13CD4AC000A63045 /* UIKit.framework */; };
+		C86ED1A213CD4AC000A63045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86ED1A113CD4AC000A63045 /* Foundation.framework */; };
+		C86ED1A413CD4AC000A63045 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86ED1A313CD4AC000A63045 /* CoreGraphics.framework */; };
+		C86ED1AA13CD4AC000A63045 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C86ED1A813CD4AC000A63045 /* InfoPlist.strings */; };
+		C86ED1AD13CD4AC000A63045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C86ED1AC13CD4AC000A63045 /* main.m */; };
+		C86ED1B013CD4AC000A63045 /* TestDrawAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C86ED1AF13CD4AC000A63045 /* TestDrawAppDelegate.m */; };
+		C86ED1B313CD4AC000A63045 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86ED1B113CD4AC000A63045 /* MainWindow.xib */; };
+		C86ED1BA13CD4AC000A63045 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86ED19F13CD4AC000A63045 /* UIKit.framework */; };
+		C86ED1BB13CD4AC000A63045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86ED1A113CD4AC000A63045 /* Foundation.framework */; };
+		C86ED1BC13CD4AC000A63045 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86ED1A313CD4AC000A63045 /* CoreGraphics.framework */; };
+		C86ED1C413CD4AC000A63045 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C86ED1C213CD4AC000A63045 /* InfoPlist.strings */; };
+		C86ED1C713CD4AC000A63045 /* TestDrawTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C86ED1C613CD4AC000A63045 /* TestDrawTests.h */; };
+		C86ED1C913CD4AC000A63045 /* TestDrawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C86ED1C813CD4AC000A63045 /* TestDrawTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C86ED1BD13CD4AC000A63045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C86ED19213CD4ABF00A63045 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C86ED19A13CD4AC000A63045;
+			remoteInfo = TestDraw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C86ED19B13CD4AC000A63045 /* TestDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86ED19F13CD4AC000A63045 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C86ED1A113CD4AC000A63045 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C86ED1A313CD4AC000A63045 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C86ED1A713CD4AC000A63045 /* TestDraw-Info.plist */ = {isa = PBXFileReference; path = "TestDraw-Info.plist"; sourceTree = "<group>"; };
+		C86ED1A913CD4AC000A63045 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C86ED1AB13CD4AC000A63045 /* TestDraw-Prefix.pch */ = {isa = PBXFileReference; path = "TestDraw-Prefix.pch"; sourceTree = "<group>"; };
+		C86ED1AC13CD4AC000A63045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C86ED1AE13CD4AC000A63045 /* TestDrawAppDelegate.h */ = {isa = PBXFileReference; path = TestDrawAppDelegate.h; sourceTree = "<group>"; };
+		C86ED1AF13CD4AC000A63045 /* TestDrawAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDrawAppDelegate.m; sourceTree = "<group>"; };
+		C86ED1B213CD4AC000A63045 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C86ED1B913CD4AC000A63045 /* TestDrawTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDrawTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86ED1C113CD4AC000A63045 /* TestDrawTests-Info.plist */ = {isa = PBXFileReference; path = "TestDrawTests-Info.plist"; sourceTree = "<group>"; };
+		C86ED1C313CD4AC000A63045 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C86ED1C513CD4AC000A63045 /* TestDrawTests-Prefix.pch */ = {isa = PBXFileReference; path = "TestDrawTests-Prefix.pch"; sourceTree = "<group>"; };
+		C86ED1C613CD4AC000A63045 /* TestDrawTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDrawTests.h; sourceTree = "<group>"; };
+		C86ED1C813CD4AC000A63045 /* TestDrawTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDrawTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C86ED19813CD4AC000A63045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86ED1A013CD4AC000A63045 /* UIKit.framework in Frameworks */,
+				C86ED1A213CD4AC000A63045 /* Foundation.framework in Frameworks */,
+				C86ED1A413CD4AC000A63045 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86ED1B513CD4AC000A63045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86ED1BA13CD4AC000A63045 /* UIKit.framework in Frameworks */,
+				C86ED1BB13CD4AC000A63045 /* Foundation.framework in Frameworks */,
+				C86ED1BC13CD4AC000A63045 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C86ED19013CD4ABF00A63045 = {
+			isa = PBXGroup;
+			children = (
+				C86ED1A513CD4AC000A63045 /* TestDraw */,
+				C86ED1BF13CD4AC000A63045 /* TestDrawTests */,
+				C86ED19E13CD4AC000A63045 /* Frameworks */,
+				C86ED19C13CD4AC000A63045 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C86ED19C13CD4AC000A63045 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C86ED19B13CD4AC000A63045 /* TestDraw.app */,
+				C86ED1B913CD4AC000A63045 /* TestDrawTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C86ED19E13CD4AC000A63045 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C86ED19F13CD4AC000A63045 /* UIKit.framework */,
+				C86ED1A113CD4AC000A63045 /* Foundation.framework */,
+				C86ED1A313CD4AC000A63045 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C86ED1A513CD4AC000A63045 /* TestDraw */ = {
+			isa = PBXGroup;
+			children = (
+				C86ED1AE13CD4AC000A63045 /* TestDrawAppDelegate.h */,
+				C86ED1AF13CD4AC000A63045 /* TestDrawAppDelegate.m */,
+				C86ED1B113CD4AC000A63045 /* MainWindow.xib */,
+				C86ED1A613CD4AC000A63045 /* Supporting Files */,
+			);
+			path = TestDraw;
+			sourceTree = "<group>";
+		};
+		C86ED1A613CD4AC000A63045 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C86ED1A713CD4AC000A63045 /* TestDraw-Info.plist */,
+				C86ED1A813CD4AC000A63045 /* InfoPlist.strings */,
+				C86ED1AB13CD4AC000A63045 /* TestDraw-Prefix.pch */,
+				C86ED1AC13CD4AC000A63045 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C86ED1BF13CD4AC000A63045 /* TestDrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				C86ED1C613CD4AC000A63045 /* TestDrawTests.h */,
+				C86ED1C813CD4AC000A63045 /* TestDrawTests.m */,
+				C86ED1C013CD4AC000A63045 /* Supporting Files */,
+			);
+			path = TestDrawTests;
+			sourceTree = "<group>";
+		};
+		C86ED1C013CD4AC000A63045 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C86ED1C113CD4AC000A63045 /* TestDrawTests-Info.plist */,
+				C86ED1C213CD4AC000A63045 /* InfoPlist.strings */,
+				C86ED1C513CD4AC000A63045 /* TestDrawTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C86ED19A13CD4AC000A63045 /* TestDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86ED1CC13CD4AC000A63045 /* Build configuration list for PBXNativeTarget "TestDraw" */;
+			buildPhases = (
+				C86ED19713CD4AC000A63045 /* Sources */,
+				C86ED19813CD4AC000A63045 /* Frameworks */,
+				C86ED19913CD4AC000A63045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestDraw;
+			productName = TestDraw;
+			productReference = C86ED19B13CD4AC000A63045 /* TestDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C86ED1B813CD4AC000A63045 /* TestDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86ED1CF13CD4AC000A63045 /* Build configuration list for PBXNativeTarget "TestDrawTests" */;
+			buildPhases = (
+				C86ED1B413CD4AC000A63045 /* Sources */,
+				C86ED1B513CD4AC000A63045 /* Frameworks */,
+				C86ED1B613CD4AC000A63045 /* Resources */,
+				C86ED1B713CD4AC000A63045 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C86ED1BE13CD4AC000A63045 /* PBXTargetDependency */,
+			);
+			name = TestDrawTests;
+			productName = TestDrawTests;
+			productReference = C86ED1B913CD4AC000A63045 /* TestDrawTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C86ED19213CD4ABF00A63045 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C86ED19513CD4ABF00A63045 /* Build configuration list for PBXProject "TestDraw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C86ED19013CD4ABF00A63045;
+			productRefGroup = C86ED19C13CD4AC000A63045 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C86ED19A13CD4AC000A63045 /* TestDraw */,
+				C86ED1B813CD4AC000A63045 /* TestDrawTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C86ED19913CD4AC000A63045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86ED1AA13CD4AC000A63045 /* InfoPlist.strings in Resources */,
+				C86ED1B313CD4AC000A63045 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86ED1B613CD4AC000A63045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86ED1C413CD4AC000A63045 /* InfoPlist.strings in Resources */,
+				C86ED1C713CD4AC000A63045 /* TestDrawTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C86ED1B713CD4AC000A63045 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C86ED19713CD4AC000A63045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86ED1AD13CD4AC000A63045 /* main.m in Sources */,
+				C86ED1B013CD4AC000A63045 /* TestDrawAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86ED1B413CD4AC000A63045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86ED1C913CD4AC000A63045 /* TestDrawTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C86ED1BE13CD4AC000A63045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C86ED19A13CD4AC000A63045 /* TestDraw */;
+			targetProxy = C86ED1BD13CD4AC000A63045 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C86ED1A813CD4AC000A63045 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86ED1A913CD4AC000A63045 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C86ED1B113CD4AC000A63045 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86ED1B213CD4AC000A63045 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C86ED1C213CD4AC000A63045 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86ED1C313CD4AC000A63045 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C86ED1CA13CD4AC000A63045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C86ED1CB13CD4AC000A63045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		C86ED1CD13CD4AC000A63045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestDraw/TestDraw-Prefix.pch";
+				INFOPLIST_FILE = "TestDraw/TestDraw-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C86ED1CE13CD4AC000A63045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestDraw/TestDraw-Prefix.pch";
+				INFOPLIST_FILE = "TestDraw/TestDraw-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C86ED1D013CD4AC000A63045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestDraw.app/TestDraw";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestDrawTests/TestDrawTests-Prefix.pch";
+				INFOPLIST_FILE = "TestDrawTests/TestDrawTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C86ED1D113CD4AC000A63045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestDraw.app/TestDraw";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestDrawTests/TestDrawTests-Prefix.pch";
+				INFOPLIST_FILE = "TestDrawTests/TestDrawTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C86ED19513CD4ABF00A63045 /* Build configuration list for PBXProject "TestDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86ED1CA13CD4AC000A63045 /* Debug */,
+				C86ED1CB13CD4AC000A63045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86ED1CC13CD4AC000A63045 /* Build configuration list for PBXNativeTarget "TestDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86ED1CD13CD4AC000A63045 /* Debug */,
+				C86ED1CE13CD4AC000A63045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C86ED1CF13CD4AC000A63045 /* Build configuration list for PBXNativeTarget "TestDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86ED1D013CD4AC000A63045 /* Debug */,
+				C86ED1D113CD4AC000A63045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C86ED19213CD4ABF00A63045 /* Project object */;
+}
