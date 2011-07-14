@@ -3,18 +3,23 @@
 //  TestDraw
 //
 //  Created by Johan Bilien on 7/12/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import "TestDrawAppDelegate.h"
+#import "CanvasController.h"
 
 @implementation TestDrawAppDelegate
 
 
 @synthesize window=_window;
+@synthesize canvasController=_canvasController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.canvasController = [[CanvasController alloc] init];
+    
+    self.window.rootViewController = self.canvasController;
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;
@@ -61,6 +66,7 @@
 
 - (void)dealloc
 {
+    [_canvasController release];
     [_window release];
     [super dealloc];
 }

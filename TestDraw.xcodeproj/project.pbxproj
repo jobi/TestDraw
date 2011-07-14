@@ -20,6 +20,8 @@
 		C86ED1C413CD4AC000A63045 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C86ED1C213CD4AC000A63045 /* InfoPlist.strings */; };
 		C86ED1C713CD4AC000A63045 /* TestDrawTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C86ED1C613CD4AC000A63045 /* TestDrawTests.h */; };
 		C86ED1C913CD4AC000A63045 /* TestDrawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C86ED1C813CD4AC000A63045 /* TestDrawTests.m */; };
+		C86ED1D413CD4B9500A63045 /* CanvasController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86ED1D313CD4B9500A63045 /* CanvasController.m */; };
+		C86ED1D713CD4C1F00A63045 /* Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = C86ED1D613CD4C1F00A63045 /* Canvas.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +39,23 @@
 		C86ED19F13CD4AC000A63045 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C86ED1A113CD4AC000A63045 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C86ED1A313CD4AC000A63045 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C86ED1A713CD4AC000A63045 /* TestDraw-Info.plist */ = {isa = PBXFileReference; path = "TestDraw-Info.plist"; sourceTree = "<group>"; };
+		C86ED1A713CD4AC000A63045 /* TestDraw-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestDraw-Info.plist"; sourceTree = "<group>"; };
 		C86ED1A913CD4AC000A63045 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C86ED1AB13CD4AC000A63045 /* TestDraw-Prefix.pch */ = {isa = PBXFileReference; path = "TestDraw-Prefix.pch"; sourceTree = "<group>"; };
+		C86ED1AB13CD4AC000A63045 /* TestDraw-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestDraw-Prefix.pch"; sourceTree = "<group>"; };
 		C86ED1AC13CD4AC000A63045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C86ED1AE13CD4AC000A63045 /* TestDrawAppDelegate.h */ = {isa = PBXFileReference; path = TestDrawAppDelegate.h; sourceTree = "<group>"; };
+		C86ED1AE13CD4AC000A63045 /* TestDrawAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDrawAppDelegate.h; sourceTree = "<group>"; };
 		C86ED1AF13CD4AC000A63045 /* TestDrawAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDrawAppDelegate.m; sourceTree = "<group>"; };
 		C86ED1B213CD4AC000A63045 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		C86ED1B913CD4AC000A63045 /* TestDrawTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDrawTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C86ED1C113CD4AC000A63045 /* TestDrawTests-Info.plist */ = {isa = PBXFileReference; path = "TestDrawTests-Info.plist"; sourceTree = "<group>"; };
+		C86ED1C113CD4AC000A63045 /* TestDrawTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestDrawTests-Info.plist"; sourceTree = "<group>"; };
 		C86ED1C313CD4AC000A63045 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C86ED1C513CD4AC000A63045 /* TestDrawTests-Prefix.pch */ = {isa = PBXFileReference; path = "TestDrawTests-Prefix.pch"; sourceTree = "<group>"; };
+		C86ED1C513CD4AC000A63045 /* TestDrawTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestDrawTests-Prefix.pch"; sourceTree = "<group>"; };
 		C86ED1C613CD4AC000A63045 /* TestDrawTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDrawTests.h; sourceTree = "<group>"; };
 		C86ED1C813CD4AC000A63045 /* TestDrawTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDrawTests.m; sourceTree = "<group>"; };
+		C86ED1D213CD4B9500A63045 /* CanvasController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasController.h; sourceTree = "<group>"; };
+		C86ED1D313CD4B9500A63045 /* CanvasController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasController.m; sourceTree = "<group>"; };
+		C86ED1D513CD4C1F00A63045 /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
+		C86ED1D613CD4C1F00A63045 /* Canvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Canvas.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				C86ED1AE13CD4AC000A63045 /* TestDrawAppDelegate.h */,
+				C86ED1D213CD4B9500A63045 /* CanvasController.h */,
+				C86ED1D313CD4B9500A63045 /* CanvasController.m */,
+				C86ED1D513CD4C1F00A63045 /* Canvas.h */,
+				C86ED1D613CD4C1F00A63045 /* Canvas.m */,
 				C86ED1AF13CD4AC000A63045 /* TestDrawAppDelegate.m */,
 				C86ED1B113CD4AC000A63045 /* MainWindow.xib */,
 				C86ED1A613CD4AC000A63045 /* Supporting Files */,
@@ -253,6 +263,8 @@
 			files = (
 				C86ED1AD13CD4AC000A63045 /* main.m in Sources */,
 				C86ED1B013CD4AC000A63045 /* TestDrawAppDelegate.m in Sources */,
+				C86ED1D413CD4B9500A63045 /* CanvasController.m in Sources */,
+				C86ED1D713CD4C1F00A63045 /* Canvas.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
