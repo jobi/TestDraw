@@ -47,6 +47,11 @@
                                               kCGImageAlphaPremultipliedLast|
                                               kCGBitmapByteOrder32Big);
         CGColorSpaceRelease(rgb);
+        
+        CGContextSetRGBFillColor(_imageContext, 1, 0, 0, 1);
+        CGContextSetLineWidth(_imageContext, 4);
+        CGContextSetLineCap(_imageContext, kCGLineCapRound);
+        CGContextSetLineJoin(_imageContext, kCGLineJoinRound);
     }
 }
 
@@ -71,11 +76,20 @@
     UITouch *touch;
     
     while ((touch = [enumerator nextObject])) {
-        CGPoint p = [touch locationInView:self];
-        CGRect rect = CGRectMake(p.x-5, p.y-5, 10, 10);
-                
-        CGContextSetRGBFillColor(_imageContext, 1, 0, 0, 1);
-        CGContextFillRect(_imageContext, rect);
+        CGPoint now = [touch locationInView:self];
+        CGPoint previous = [touch previousLocationInView:self];
+        CGPoint controlPoint = { 2 * now.x - previous.x, 2 * now.y - previous.y };
+        CGRect rect = CGRectMake(MIN(previous.x, now.x) - 5,
+                                 MIN(previous.y, now.y) - 5,
+                                 ABS(previous.x - now.x) + 5,
+                                 ABS(previous.y - now.y) + 5);
+ 
+        CGContextMoveToPoint(_imageContext, previous.x, previous.y);
+        CGContextAddQuadCurveToPoint(_imageContext,
+                                     controlPoint.x, controlPoint.y,
+                                     now.x, now.y);
+        
+        CGContextStrokePath(_imageContext);
         
         [self setNeedsDisplayInRect:rect];
     }
