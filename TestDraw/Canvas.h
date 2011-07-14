@@ -12,6 +12,7 @@
 @private
     CGContextRef _imageContext;
     void *_imageData;
+    NSMutableDictionary *_activeTouches;
 }
 
 @property (nonatomic, readonly) CGImageRef content;
