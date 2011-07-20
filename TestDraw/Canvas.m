@@ -10,19 +10,21 @@
 @interface TouchPath : NSObject {
 }
 
-@property CGPoint previousControlPoint;
+@property CGPoint pointNMinus2;
+@property CGPoint controlPoint2NMinus2;
 
 @end
 
 @implementation TouchPath
 
-@synthesize previousControlPoint;
+@synthesize pointNMinus2;
+@synthesize controlPoint2NMinus2;
 
 - (id) init
 {
     if ((self = [super init])) {
-        self.previousControlPoint = CGPointMake(-1, -1);
-        NSLog(@"Initialized previous");
+        self.pointNMinus2 = CGPointMake(-1, -1);
+        self.controlPoint2NMinus2 = CGPointMake(-1, -1);
     }
     
     return self;
@@ -126,35 +128,40 @@
         CGPoint now = [touch locationInView:self];
         CGPoint previous = [touch previousLocationInView:self];
         
-        if (path.previousControlPoint.x == -1) {
-            path.previousControlPoint = previous;
-            NSLog(@"Set previous CP to %f,%f", previous.x, previous.y); 
+        if (path.pointNMinus2.x == -1) {
+            path.pointNMinus2 = previous;
+            path.controlPoint2NMinus2 = previous;
             continue;
         }
 
         /* Normalizing the control point so that it's a distance of 1 from the previous point */
+        /*
         CGFloat d1 = sqrtf((previous.x - path.previousControlPoint.x)*(previous.x - path.previousControlPoint.x) +
                           (previous.y - path.previousControlPoint.y)*(previous.y - path.previousControlPoint.y));
         CGFloat d2 = sqrtf((previous.x - now.x)*(previous.x - now.x) +
-                           (previous.y - now.y)*(previous.y - now.y));
+                           (previous.y - now.y)*(previous.y - now.y));*/
     
-        CGPoint controlPoint1 = { previous.x + ((previous.x - path.previousControlPoint.x) * d2 / (10 * d1)),
-                                  previous.y + ((previous.y - path.previousControlPoint.y) * d2 / (10 * d1)) };
+        CGPoint controlPoint1 = { path.pointNMinus2.x + (path.pointNMinus2.x - path.controlPoint2NMinus2.x),
+                                  path.pointNMinus2.y + (path.pointNMinus2.y - path.controlPoint2NMinus2.y) };
+                                                         
+        CGPoint controlPoint2 = { previous.x - (now.x - path.pointNMinus2.x),
+                                  previous.y - (now.y - path.pointNMinus2.y) };
 
-        CGRect rect = CGRectMake(MIN(previous.x, now.x) - 20,
-                                 MIN(previous.y, now.y) - 20,
-                                 ABS(previous.x - now.x) + 40,
-                                 ABS(previous.y - now.y) + 40);
+        CGRect rect = CGRectMake(MIN(previous.x, path.pointNMinus2.x) - 20,
+                                 MIN(previous.y, path.pointNMinus2.y) - 20,
+                                 ABS(previous.x - path.pointNMinus2.x) + 40,
+                                 ABS(previous.y - path.pointNMinus2.y) + 40);
  
-        CGContextMoveToPoint(_imageContext, previous.x, previous.y);
-        CGContextAddQuadCurveToPoint(_imageContext,
+        CGContextMoveToPoint(_imageContext, path.pointNMinus2.x, path.pointNMinus2.y);
+        CGContextAddCurveToPoint(_imageContext,
                                  controlPoint1.x, controlPoint1.y,
-                             //    controlPoint2.x, controlPoint2.y,
-                                 now.x, now.y);
+                                 controlPoint2.x, controlPoint2.y,
+                                 previous.x, previous.y);
         
         CGContextStrokePath(_imageContext);
         
-        path.previousControlPoint = controlPoint1;
+        path.pointNMinus2 = previous;
+        path.controlPoint2NMinus2 = controlPoint2;
         
         [self setNeedsDisplayInRect:rect];
     }
