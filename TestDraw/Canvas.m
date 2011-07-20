@@ -195,6 +195,17 @@ void normalizeVector(CGPoint *v, CGFloat length)
     }
 }
 
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    CGContextClearRect(_imageContext, self.frame);
+    [self setNeedsDisplay];
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
 - (void)dealloc
 {
     [_activeTouches release];

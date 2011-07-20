@@ -57,6 +57,11 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    [self.view becomeFirstResponder];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
